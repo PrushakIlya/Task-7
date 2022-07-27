@@ -1,0 +1,15 @@
+{
+    "name": "prushak/task-7",
+    "autoload": {
+        "psr-4": {
+            "Prushak\\Task7\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ilya",
+            "email": "89218019+PrushakIlya@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
