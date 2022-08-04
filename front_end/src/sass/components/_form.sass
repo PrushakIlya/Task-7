@@ -1,0 +1,27 @@
+@import './../vars'
+.form
+  display: flex
+  align-items: center
+  flex-direction: column
+  h1
+    margin: 20px 0
+  form
+    display: flex
+    flex-direction: column
+
+    .input-block
+      display: flex
+      margin-bottom: 10px
+      label
+        width: 100px
+        text-transform: capitalize
+        text-shadow: $shadowBlack
+      input, textarea
+        width: 160px
+      textarea
+        height: 100px
+
+      .block-error
+        position: fixed
+        margin-left: 270px
+        color: $red
