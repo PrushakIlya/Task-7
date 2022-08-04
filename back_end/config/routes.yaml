@@ -1,0 +1,13 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+api_login_check:
+    path: /api/login_check
+
+api_refresh_token:
+    path: /api/auth/token/refresh    
+
+dashboard:
+    path: /admin
+    controller: App\Controller\Admin\DashboardController::index
