@@ -1,0 +1,14 @@
+453cfe,::1,GET,http://localhost:8888/bill,1659568165,cba65a,500
+cba65a,::1,POST,http://localhost:8888/bill,1659568165,,500
+2bd3fc,::1,GET,http://localhost:8888/bill,1659568191,4b8d00,500
+4b8d00,::1,POST,http://localhost:8888/bill,1659568191,,500
+06b220,::1,GET,http://localhost:8888/bill,1659568214,ee3c7c,500
+ee3c7c,::1,POST,http://localhost:8888/bill,1659568214,,500
+6b1c6d,::1,GET,http://localhost:8888/bill,1659568277,f01118,500
+f01118,::1,POST,http://localhost:8888/bill,1659568277,,500
+b6429c,::1,POST,http://localhost:8888/bill,1659568313,,200
+583da6,::1,POST,http://localhost:8888/bill,1659568361,,200
+eb338a,::1,POST,http://localhost:8888/bill,1659568374,,200
+c274b0,::1,POST,http://localhost:8888/bill,1659568429,,200
+11baa6,::1,POST,http://localhost:8888/bill,1659572065,,200
+247759,::1,POST,http://localhost:8888/bill,1659572352,,200

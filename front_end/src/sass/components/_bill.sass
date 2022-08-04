@@ -1,0 +1,22 @@
+@import './../vars'
+.bill
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding-top: 20px
+  form
+    div
+      display: flex
+      p
+        margin-right: 10px
+        text-shadow: $shadowBlack
+        &:last-child
+          margin-right: 0
+    .text::after
+        content: ':'
+        margin-left: 10px
+
+    .btn-block
+      margin-top: 10px
+      display: flex
+      justify-content: space-between
