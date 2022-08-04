@@ -4,9 +4,9 @@ namespace Prushak\Task7\Products;
 
 class FridgeProduct extends Product
 {
-    private string $name = 'Fridge';
-    public function __construct(array $type, string $manufacture, string $releaseDate, int $cost)
+    private const NAME = 'Fridge';
+    public function __construct(string $type, string $releaseDate, int $cost, string $manufacture='')
     {
-        parent::__construct($type, $this->name, $manufacture, $releaseDate, $cost);
+        parent::__construct($type, self::NAME, $manufacture, $releaseDate, $cost);
     }
 }

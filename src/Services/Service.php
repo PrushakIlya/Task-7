@@ -2,8 +2,6 @@
 
 namespace Prushak\Task7\Services;
 
-use Prushak\Task7\Inter;
-
 abstract class Service
 {
     private string $type;
@@ -19,8 +17,48 @@ abstract class Service
         $this->cost = $cost;
     }
 
-    public function getParams(): array
+    public function setType(string $type): void
     {
-        return ['type'=>$this->type,'deadline'=>$this->deadline,'queue'=>$this->queue,'cost'=>$this->cost];
+        $this->type = $type;
+    }
+
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    public function setDeadline(string $deadline): void
+    {
+        $this->deadline = $deadline;
+    }
+
+    public function getDeadline(): string
+    {
+        return $this->deadline;
+    }
+
+    public function setQueue(string $queue): void
+    {
+        $this->queue = $queue;
+    }
+
+    public function getQueue(): string
+    {
+        return $this->queue;
+    }
+
+    public function setCost(string $cost): void
+    {
+        $this->cost = $cost;
+    }
+
+    public function getCost(): string
+    {
+        return $this->cost;
+    }
+
+    public function getData(): array
+    {
+        return ['type' => $this->type, 'deadline' => $this->deadline, 'queue' => $this->queue, 'cost' => $this->cost];
     }
 }

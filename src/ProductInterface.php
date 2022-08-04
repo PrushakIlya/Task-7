@@ -4,5 +4,5 @@ namespace Prushak\Task7;
 
 interface ProductInterface
 {
-    public function calculateCost($arrCosts);
+    public function makeBill(array $products): array;
 }

@@ -6,14 +6,14 @@ use Prushak\Task7\ServiceTrait;
 
 abstract class Product
 {
-    public array $type;
+    use ServiceTrait;
+    public string $type;
     private string $name;
-    private string $manufacture;
+    public string $manufacture;
     private string $releaseDate;
     private int $cost;
-    use ServiceTrait;
 
-    public function __construct(array $type, string $name, string $manufacture, string $releaseDate, int $cost)
+    public function __construct(string $type, string $name, string $manufacture, string $releaseDate, int $cost)
     {
         $this->type = $type;
         $this->name = $name;
@@ -22,11 +22,51 @@ abstract class Product
         $this->cost = $cost;
     }
 
-    public function show()
+    public function setName(string $name): void
     {
-        return 'Kind of: '.$this->name.', manufacture: '.$this->manufacture.', 
-                release date: '.$this->releaseDate.', cost: '.$this->cost.', 
-                >>>type: '.$this->type['type'].', deadline: '.$this->type['deadline'].', 
-                queue: '.$this->type['queue'].', cost: '.$this->type['cost']."<br>";
+        $this->name = $name;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function setManufacture(string $manufacture): void
+    {
+        $this->manufacture = $manufacture;
+    }
+
+    public function getManufacture(): string
+    {
+        return $this->manufacture;
+    }
+
+    public function setReleaseDate(string $releaseDate): void
+    {
+        $this->releaseDate = $releaseDate;
+    }
+
+    public function getReleaseDate(): string
+    {
+        return $this->releaseDate;
+    }
+
+    public function setCost(string $releaseDate): void
+    {
+        $this->releaseDate = $releaseDate;
+    }
+
+    public function getCost(): string
+    {
+        return $this->releaseDate;
+    }
+
+    public function getData(): array
+    {
+        return ['type' => $this->type, 'name' => $this->name,
+            'manufacture' => $this->manufacture,
+            'releaseDate' => $this->releaseDate, 'cost' => $this->cost,
+        ];
     }
 }
