@@ -56,9 +56,4 @@ abstract class Service
     {
         return $this->cost;
     }
-
-    public function getData(): array
-    {
-        return ['type' => $this->type, 'deadline' => $this->deadline, 'queue' => $this->queue, 'cost' => $this->cost];
-    }
 }

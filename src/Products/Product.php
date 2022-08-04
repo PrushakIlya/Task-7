@@ -7,15 +7,13 @@ use Prushak\Task7\ServiceTrait;
 abstract class Product
 {
     use ServiceTrait;
-    public string $type;
     private string $name;
     public string $manufacture;
     private string $releaseDate;
     private int $cost;
 
-    public function __construct(string $type, string $name, string $manufacture, string $releaseDate, int $cost)
+    public function __construct(string $name, string $manufacture, string $releaseDate, int $cost)
     {
-        $this->type = $type;
         $this->name = $name;
         $this->manufacture = $manufacture;
         $this->releaseDate = $releaseDate;
@@ -64,7 +62,8 @@ abstract class Product
 
     public function getData(): array
     {
-        return ['type' => $this->type, 'name' => $this->name,
+        return [
+            'name' => $this->name,
             'manufacture' => $this->manufacture,
             'releaseDate' => $this->releaseDate, 'cost' => $this->cost,
         ];
