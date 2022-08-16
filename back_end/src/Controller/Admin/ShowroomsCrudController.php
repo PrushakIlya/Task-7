@@ -25,7 +25,6 @@ class ShowroomsCrudController extends AbstractCrudController
                 ->onlyOnIndex(),
             TextField::new('name'),
             DateTimeField::new('date_created')
-                ->onlyOnIndex()
         ];
     }
 }
